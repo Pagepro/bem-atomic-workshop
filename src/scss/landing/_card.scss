@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Card
+   ========================================================================== */
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    padding: $size-gutter;
+
+    background-color: $color-white;
+}
+
+.card__content {
+    width: 100%;
+    padding: $size-gutter;
+
+    border: 1px solid $color-dark-2;
+}
+
+.card__section {
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: $size-gutter * 2;
+    }
+}
