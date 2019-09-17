@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Styleguide - don't add any code here!!!
+   ========================================================================== */
+
+@import 'common';
+
+.styleguide-header {
+    padding: $size-gutter 0;
+
+    color: $color-white;
+    background-color: $color-black;
+}
+
+.styleguide-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.styleguide-header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: $size-gutter * 2;
+
+    transition: $transition-default;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.styleguide-header__title span {
+    display: block;
+
+    font-family: $font-decor;
+
+    color: $color-gold-1;
+}
+
+.styleguide-main {
+    padding: ($size-gutter * 3) 0;
+}
+
+.styleguide-section {
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: $size-gutter * 4;
+    }
+}
+
+.styleguide-section__title {
+    margin-bottom: $size-gutter;
+}
+
+.styleguide-section__decor {
+    display: block;
+
+    margin-bottom: $size-gutter * 2;
+}
+
+.styleguide-subsection:not(:last-child) {
+    margin-bottom: $size-gutter * 2;
+}
+
+.styleguide-subsection__title {
+    margin-bottom: $size-gutter;
+}
+
+.styleguide-subsection__content {
+    padding: $size-gutter;
+
+    border: 1px solid $color-dark-2;
+}
+
+.styleguide-list__item:not(:last-child) {
+    margin-bottom: $size-gutter * 2;
+}
+
+.styleguide-item-name {
+    margin-bottom: $size-gutter;
+}
