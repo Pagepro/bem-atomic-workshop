@@ -1,0 +1,31 @@
+/* ==========================================================================
+   List
+   ========================================================================== */
+
+.list {
+    counter-reset: item;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+
+    margin-left: 2em;
+    &:not(:last-child) {
+        margin-bottom: $size-gutter / 4;
+    }
+    &::before {
+        display: inline-block;
+
+        width: 1em;
+        margin-left: -1em;
+
+        font-family: $font-decor;
+        font-size: 24px;
+
+        content: counter(item) ". ";
+        counter-increment: item;
+
+        color: $color-gold-1;
+    }
+}

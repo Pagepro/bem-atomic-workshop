@@ -2,3 +2,18 @@
    Contents
    ========================================================================== */
 
+.contents__heading {
+    margin-bottom: $size-gutter;
+}
+
+.contents__heading span {
+    font-family: $font-decor;
+
+    color: $color-gold-1;
+    display: block;
+}
+
+.contents__decor {
+  display: block;
+  margin-bottom: $size-gutter * 2;
+}

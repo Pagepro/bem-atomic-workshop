@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Link
+   ========================================================================== */
+
+.link {
+    display: flex;
+
+    transition: $transition-default;
+    text-decoration: none;
+
+    color: inherit;
+    &:hover {
+        color: $color-gold-1;
+    }
+}
