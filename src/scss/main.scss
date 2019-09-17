@@ -1,7 +1,6 @@
-// External libs
-@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+/* ==========================================================================
+   Main
+   ========================================================================== */
 
-// Base
-@import 'base/reset';
-@import 'base/fonts';
-
+// Import new scss files here
+@import 'common';

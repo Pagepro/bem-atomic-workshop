@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    padding: $size-gutter 0;
+
+    color: $color-white;
+    background-color: $color-black;
+    height: 76px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: $size-gutter * 2;
+
+    transition: 250ms ease-in-out;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.header__title {
+    font-family: $font-secondary;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.header__title span {
+    font-family: $font-decor;
+
+    color: $color-gold-1;
+}
