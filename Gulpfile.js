@@ -12,9 +12,6 @@ var sassOptions = {
   outputStyle: 'expanded'
 };
 
-var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
-};
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
@@ -32,8 +29,8 @@ gulp.task('sass', function() {
         .src(input)
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write())
-        .pipe(autoprefixer(autoprefixerOptions))
         .pipe(gulp.dest(output))
         .pipe(browserSync.stream());
 });
@@ -57,6 +54,6 @@ gulp.task('prod', function () {
   return gulp
     .src(input)
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(autoprefixer())
     .pipe(gulp.dest(output));
 });
