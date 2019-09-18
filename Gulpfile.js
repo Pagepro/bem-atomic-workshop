@@ -12,9 +12,6 @@ var sassOptions = {
   outputStyle: 'expanded'
 };
 
-var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
-};
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
@@ -33,7 +30,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(autoprefixer(autoprefixerOptions))
+        .pipe(autoprefixer({}))
         .pipe(gulp.dest(output))
         .pipe(browserSync.stream());
 });
