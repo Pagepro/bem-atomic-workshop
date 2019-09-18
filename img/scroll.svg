@@ -1,0 +1,18 @@
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 44" style="enable-background:new 0 0 16 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#__1_);}
+</style>
+<pattern  x="3" y="37.5" width="21" height="57" patternUnits="userSpaceOnUse" id="pattern" viewBox="0 -57 21 57" style="overflow:visible;">
+	<g>
+		<rect y="-57" class="st0" width="21" height="57"/>
+
+			<image style="overflow:visible;enable-background:new    ;" width="21" height="57" xlink:href="430D47F3C8782E4B.png"  transform="matrix(1 0 0 -1 0 0)">
+		</image>
+	</g>
+</pattern>
+<pattern  id="__1_" xlink:href="#pattern" patternTransform="matrix(0.7619 0 0 -0.7719 -1947.0573 -13865.3135)">
+</pattern>
+<rect id="_" class="st1" width="16" height="44"/>
+</svg>
