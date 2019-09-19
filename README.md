@@ -4,7 +4,7 @@ This is a very basic starting point for new web projects. It takes no assumption
 The boilerplate includes gulp, sass, sourcemaps, autoprefixer, breakpoint and browsersync. And nothing else.
 
 ## Requirements
-1. [node v8.12.0 or later](https://nodejs.org/en/)
+1. [node v10 or later](https://nodejs.org/en/)
 2. [yarn](https://yarnpkg.com/)
 
 ## Quickstart
